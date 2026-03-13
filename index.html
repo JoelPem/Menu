@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FPS Boost Lab</title>
+
+<link rel="icon" href="img/logo.png">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<header class="topbar">
+
+<div class="header-left">
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<img src="img/logo.png" class="logo-top">
+
+</div>
+
+<div class="lang-switch">
+<button onclick="setLang('es')">ES</button>
+<button onclick="setLang('en')">EN</button>
+</div>
+
+</header>
+
+
+<div id="sidebar" class="sidebar">
+
+<div class="sidebar-logo">
+<img src="img/logo.png">
+</div>
+
+<a id="menu1" href="#">Inicio</a>
+<a id="menu2" href="./FpsBoostLab/">Calculadora FPS</a>
+<a id="menu3" href="#tools">Herramientas</a>
+
+</div>
+
+
+<section class="hero">
+
+<img src="img/logo.png" class="hero-logo">
+
+<h1>FPS Boost Lab</h1>
+
+<p id="text1">
+Plataforma para analizar rendimiento de hardware y estimar FPS en videojuegos.
+</p>
+
+<p id="text2">
+Descubre cómo mejorar el rendimiento de tu PC para gaming.
+</p>
+
+<a class="btn" href="./FpsBoostLab/" id="button">
+Probar herramienta
+</a>
+
+</section>
+
+
+<section class="features">
+
+<div class="feature">
+<h3 id="f1t">Análisis de hardware</h3>
+<p id="f1d">Comprende cómo CPU y GPU afectan el rendimiento.</p>
+</div>
+
+<div class="feature">
+<h3 id="f2t">Estimación de FPS</h3>
+<p id="f2d">Calcula FPS aproximados antes de jugar.</p>
+</div>
+
+<div class="feature">
+<h3 id="f3t">Optimización</h3>
+<p id="f3d">Encuentra configuraciones gráficas ideales.</p>
+</div>
+
+</section>
+
+
+<section class="tools" id="tools">
+
+<h2 id="toolsTitle">Herramientas</h2>
+
+<div class="tool-grid">
+
+<div class="tool-card">
+<h3 id="tool1">Calculadora FPS</h3>
+<p id="tool1d">Estima el rendimiento de tus juegos.</p>
+</div>
+
+<div class="tool-card">
+<h3 id="tool2">Comparador de resolución</h3>
+<p id="tool2d">Compara resoluciones para gaming.</p>
+</div>
+
+<div class="tool-card">
+<h3 id="tool3">Analizador de bottleneck</h3>
+<p id="tool3d">Detecta límites de CPU o GPU.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+© 2026 FPS Boost Lab
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
