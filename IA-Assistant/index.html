@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Assistant - Programación y Código</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>🤖 IA Assistant</h1>
+                <p>Tu asistente inteligente en programación y código</p>
+            </div>
+            <button class="back-btn" onclick="window.location.href='../index.html'">← Volver</button>
+        </header>
+
+        <main class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>¡Hola! Soy tu IA Assistant 🤖</p>
+                        <p>Puedo ayudarte con:</p>
+                        <ul>
+                            <li>✅ Explicaciones de código</li>
+                            <li>✅ Generar código bien estructurado</li>
+                            <li>✅ Resolver dudas de programación</li>
+                            <li>✅ Optimizar tu código</li>
+                            <li>✅ Enseñanza de tecnologías web</li>
+                        </ul>
+                        <p>¿En qué puedo ayudarte hoy?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        placeholder="Escribe tu pregunta sobre código o programación..."
+                        onkeypress="handleKeyPress(event)"
+                        autocomplete="off"
+                    >
+                    <button id="sendBtn" onclick="sendMessage()" class="send-btn">
+                        Enviar 📤
+                    </button>
+                </div>
+                <div class="loading" id="loading" style="display:none;">
+                    <span class="spinner"></span>
+                    <span>IA pensando...</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/ai-engine.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
